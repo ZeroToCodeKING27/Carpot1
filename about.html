@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <title>About Us | Carports, Patio Roofs & Steelwork Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Carports, patio roofs, palisade fencing, steelwork installations, shade structures and supply and installation.">
+  <meta name="description" content="Learn more about our carports, patio roofs, palisade fencing, steelwork installations and custom shade structure solutions.">
+  <link href="img/favicon.ico" rel="icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Tailwind Play CDN (fine for testing; for production build Tailwind with its CLI) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT: '#1f5eff', dark: '#1646c7', soft: '#eaf0ff' } },
+          fontFamily: {
+            display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .blueprint {
+      background-image:
+        linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .rise { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
+      .rise-2 { animation-delay: .12s; }
+      .rise-3 { animation-delay: .24s; }
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+
+<body class="bg-white font-sans text-neutral-700 antialiased">
+
+  <!-- Topbar -->
+  <div class="hidden bg-black text-sm text-neutral-300 lg:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5">
+      <div class="flex items-center gap-6">
+        <a href="tel:+27000000000" class="flex items-center gap-2 transition hover:text-white"><i class="fa fa-phone-alt text-brand"></i>+27 XX XXX XXXX</a>
+        <a href="mailto:info@yourbusiness.co.za" class="flex items-center gap-2 transition hover:text-white"><i class="fa fa-envelope text-brand"></i>info@yourbusiness.co.za</a>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="#" class="hover:text-white">Terms</a>
+        <a href="#" class="hover:text-white">Privacy</a>
+        <span class="h-4 w-px bg-neutral-700"></span>
+        <a href="#" aria-label="Facebook" class="hover:text-brand"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="hover:text-brand"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram" class="hover:text-brand"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3 font-display text-xl font-extrabold tracking-tight text-black">
+     
+        SteelShade <span class="text-brand">Solutions</span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-[15px] font-medium text-neutral-600 lg:flex">
+        <a href="index.html" class="transition hover:text-black">Home</a>
+        <a href="about.html" class="border-b-2 border-brand pb-1 text-black">About</a>
+        <a href="service.html" class="transition hover:text-black">Services</a>
+        <div class="group relative">
+          <button class="flex items-center gap-1 transition hover:text-black">Pages <i class="fa fa-chevron-down text-[10px]"></i></button>
+          <div class="invisible absolute left-0 top-full w-56 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="rounded-xl border border-neutral-200 bg-white p-2 shadow-xl">
+              <a href="feature.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Why Choose Us</a>
+             
+              <a href="appointment.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Get a Quote</a>
+              <a href="testimonial.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Testimonials</a>
+              <a href="404.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">404 Page</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="transition hover:text-black">Contact</a>
+      </div>
+
+      <a href="appointment.html" class="hidden rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-brand lg:block">Get a quote</a>
+
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-300 text-black lg:hidden">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-neutral-200 bg-white px-6 pb-6 lg:hidden">
+      <div class="flex flex-col py-2 font-medium text-neutral-700">
+        <a href="index.html" class="border-b border-neutral-100 py-3">Home</a>
+        <a href="about.html" class="border-b border-neutral-100 py-3 text-brand">About</a>
+        <a href="service.html" class="border-b border-neutral-100 py-3">Services</a>
+    
+        <a href="contact.html" class="py-3">Contact</a>
+      </div>
+      <a href="appointment.html" class="mt-2 block rounded-full bg-brand py-3 text-center font-semibold text-white">Get a quote</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page header -->
+    <section class="blueprint relative overflow-hidden bg-black">
+      <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand/30 blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl px-6 py-20 lg:py-28">
+        <nav aria-label="Breadcrumb" class="rise mb-6 flex items-center gap-2 text-sm text-neutral-400">
+          <a href="index.html" class="hover:text-white">Home</a><span>/</span>
+          <a href="#" class="hover:text-white">Pages</a><span>/</span>
+          <span class="text-brand">About</span>
+        </nav>
+        <h1 class="rise rise-2 font-display text-6xl font-extrabold leading-none tracking-tight text-white sm:text-8xl lg:text-9xl">About us</h1>
+        <p class="rise rise-3 mt-6 max-w-xl text-lg text-neutral-300">Carports, patio roofs, palisade fencing and custom steelwork, supplied and installed properly.</p>
+      </div>
+      <div class="h-1.5 w-full bg-brand"></div>
+    </section>
+
+    <!-- About -->
+    <section class="py-20 lg:py-28">
+      <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+        <div class="relative pb-16 pr-10 lg:pb-20">
+          <img src="img/Copilot_20261001_210350.png" alt="Carport and Steelwork Installation" class="aspect-[4/5] w-4/5 rounded-2xl object-cover">
+          <img src="img/Copilot_20261001_210301.png" alt="Patio Roof and Shade Structure" class="absolute bottom-0 right-0 aspect-square w-1/2 rounded-2xl border-8 border-white object-cover shadow-2xl">
+          <div class="absolute -left-3 top-8 rounded-xl bg-brand px-5 py-4 text-white shadow-xl">
+            <p class="font-display text-4xl font-extrabold leading-none"><span data-count="100">100</span>%</p>
+            <p class="mt-1 text-sm text-blue-100">Quality steelwork</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="mb-3 font-semibold text-brand">Who we are</p>
+          <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight text-black sm:text-5xl">Quality steelwork solutions designed around your property</h2>
+          <p class="mt-6 max-w-prose text-lg leading-relaxed">We specialise in the supply and installation of carports, patio roofs, palisade fencing, custom shade structures and steelwork solutions for residential and commercial properties.</p>
+          <p class="mt-4 max-w-prose leading-relaxed">Our goal is to provide practical, attractive and durable structures that improve the protection, security and functionality of your property. From vehicle protection and outdoor entertainment areas to property security and custom steelwork, we provide solutions tailored to each customer's requirements.</p>
+
+          <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+            <li class="flex items-center gap-3 font-medium text-black"><i class="fa fa-check-circle text-brand"></i>Carports</li>
+            <li class="flex items-center gap-3 font-medium text-black"><i class="fa fa-check-circle text-brand"></i>Patio roofs</li>
+            <li class="flex items-center gap-3 font-medium text-black"><i class="fa fa-check-circle text-brand"></i>Palisade fencing</li>
+            <li class="flex items-center gap-3 font-medium text-black"><i class="fa fa-check-circle text-brand"></i>Custom shade structures</li>
+          </ul>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="service.html" class="rounded-full bg-brand px-8 py-3.5 font-semibold text-white transition hover:bg-brand-dark">See our services</a>
+            <a href="contact.html" class="rounded-full border border-black px-8 py-3.5 font-semibold text-black transition hover:bg-black hover:text-white">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="bg-black py-20 text-neutral-300 lg:py-28">
+      <div class="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-5">
+        <div class="lg:col-span-2">
+          <p class="mb-3 font-semibold text-brand">Why choose us</p>
+          <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl">Reliable steelwork, quality materials and professional installation</h2>
+          <p class="mt-6 leading-relaxed">We are committed to providing customers with durable products, professional workmanship and dependable service. From the first consultation through to the completed installation, we focus on delivering practical solutions that meet your needs.</p>
+          <img src="img/about-2.jpg" alt="Patio Roof Installation" class="mt-10 hidden aspect-[4/3] w-full rounded-2xl object-cover lg:block">
+        </div>
+
+        <div class="space-y-5 lg:col-span-3">
+          <article class="flex gap-6 rounded-2xl border border-neutral-800 bg-neutral-900 p-7 transition hover:border-brand">
+            <img src="img/icons/icon-2.png" alt="" class="h-14 w-14 shrink-0">
+            <div>
+              <h3 class="font-display text-2xl font-bold text-white">Quality workmanship</h3>
+              <p class="mt-2 leading-relaxed">We focus on strong construction, durable materials and neat finishing to ensure every installation meets a high standard of workmanship.</p>
+            </div>
+          </article>
+          <article class="flex gap-6 rounded-2xl border border-neutral-800 bg-neutral-900 p-7 transition hover:border-brand">
+            <img src="img/icons/icon-3.png" alt="" class="h-14 w-14 shrink-0">
+            <div>
+              <h3 class="font-display text-2xl font-bold text-white">Custom solutions</h3>
+              <p class="mt-2 leading-relaxed">Every property is different, so our carports, patio roofs, palisades and steelwork solutions can be tailored to suit your space and requirements.</p>
+            </div>
+          </article>
+          <article class="flex gap-6 rounded-2xl border border-neutral-800 bg-neutral-900 p-7 transition hover:border-brand">
+            <img src="img/icons/icon-4.png" alt="" class="h-14 w-14 shrink-0">
+            <div>
+              <h3 class="font-display text-2xl font-bold text-white">Professional installation</h3>
+              <p class="mt-2 leading-relaxed">We provide a convenient supply and installation service, helping you move from planning and material selection to a professionally completed project.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="px-6 pb-20 lg:pb-28">
+      <div class="blueprint mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl bg-brand p-10 text-white md:flex-row md:items-center lg:p-14">
+        <div class="max-w-xl">
+          <h2 class="font-display text-3xl font-extrabold leading-tight sm:text-4xl">Ready to protect and upgrade your property?</h2>
+          <p class="mt-3 text-blue-100">Tell us what you need and we'll send you a quote.</p>
+        </div>
+        <a href="appointment.html" class="shrink-0 rounded-full bg-white px-8 py-3.5 font-semibold text-black transition hover:bg-black hover:text-white">Get a free quote</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-neutral-400">
+    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Address</h3>
+        <p class="mb-3 flex gap-3"><i class="fa fa-map-marker-alt mt-1 text-brand"></i>[BUSINESS ADDRESS]</p>
+        <p class="mb-3 flex gap-3"><i class="fa fa-phone-alt mt-1 text-brand"></i>+27 XX XXX XXXX</p>
+        <p class="mb-5 flex gap-3"><i class="fa fa-envelope mt-1 text-brand"></i>info@yourbusiness.co.za</p>
+        <div class="flex gap-2">
+          <a href="#" aria-label="Twitter" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Services</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="transition hover:text-brand">Carports</a></li>
+          <li><a href="#" class="transition hover:text-brand">Patio Roofs</a></li>
+          <li><a href="#" class="transition hover:text-brand">Palisade Fencing</a></li>
+          <li><a href="#" class="transition hover:text-brand">Steelwork Installations</a></li>
+          <li><a href="#" class="transition hover:text-brand">Custom Shade Structures</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Quick links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html" class="transition hover:text-brand">About Us</a></li>
+          <li><a href="contact.html" class="transition hover:text-brand">Contact Us</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Our Services</a></li>
+          <li><a href="project.html" class="transition hover:text-brand">Our Projects</a></li>
+          <li><a href="appointment.html" class="transition hover:text-brand">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Newsletter</h3>
+        <p class="mb-5">Stay updated with our latest carport, patio roof, palisade and steelwork projects.</p>
+        <form class="flex rounded-full border border-neutral-700 p-1.5 focus-within:border-brand" onsubmit="return false">
+          <label for="email" class="sr-only">Your email</label>
+          <input id="email" type="email" placeholder="Your email" class="w-full bg-transparent px-4 text-white placeholder-neutral-500 outline-none">
+          <button class="rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-dark">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm sm:flex-row">
+        <p>&copy; <a href="#" class="text-white hover:text-brand">SteelShade Solutions</a>. All rights reserved.</p>
+        <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+        <p>Designed by <a href="https://htmlcodex.com" class="text-white hover:text-brand">HTML Codex</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" id="toTop" aria-label="Back to top" class="invisible fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white opacity-0 shadow-lg transition hover:bg-black">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+  <script>
+    // Mobile menu
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', open);
+    });
+
+    // Back to top visibility
+    const toTop = document.getElementById('toTop');
+    addEventListener('scroll', () => {
+      const show = scrollY > 400;
+      toTop.classList.toggle('invisible', !show);
+      toTop.classList.toggle('opacity-0', !show);
+    });
+  </script>
+</body>
+</html>

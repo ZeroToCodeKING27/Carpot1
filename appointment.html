@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us | Carports, Patio Roofs & Steelwork Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="carports, patio roofs, palisade fencing, steelwork, shade structures, contact">
+  <meta name="description" content="Contact us for carports, patio roofs, palisade fencing, custom shade structures, steelwork installations and supply & installation.">
+  <link href="img/favicon.ico" rel="icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Tailwind Play CDN (fine for testing; for production build Tailwind with its CLI) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT: '#1f5eff', dark: '#1646c7', soft: '#eaf0ff' } },
+          fontFamily: {
+            display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+            sans: ['"DM Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .blueprint {
+      background-image:
+        linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .rise { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
+      .rise-2 { animation-delay: .12s; }
+      .rise-3 { animation-delay: .24s; }
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  </style>
+</head>
+
+<body class="bg-white font-sans text-neutral-700 antialiased">
+
+  <!-- Topbar -->
+  <div class="hidden bg-black text-sm text-neutral-300 lg:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5">
+      <div class="flex items-center gap-6">
+        <a href="tel:+27000000000" class="flex items-center gap-2 transition hover:text-white"><i class="fa fa-phone-alt text-brand"></i>+27 XX XXX XXXX</a>
+        <a href="mailto:info@yourbusiness.co.za" class="flex items-center gap-2 transition hover:text-white"><i class="fa fa-envelope text-brand"></i>info@yourbusiness.co.za</a>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="#" class="hover:text-white">Terms</a>
+        <a href="#" class="hover:text-white">Privacy</a>
+        <span class="h-4 w-px bg-neutral-700"></span>
+        <a href="#" aria-label="Facebook" class="hover:text-brand"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="hover:text-brand"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-brand"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram" class="hover:text-brand"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-3 font-display text-xl font-extrabold tracking-tight text-black">
+        <img src="img/icons/icon-1.png" alt="" class="h-9 w-9">
+        SteelShade <span class="text-brand">Solutions</span>
+      </a>
+
+      <div class="hidden items-center gap-8 text-[15px] font-medium text-neutral-600 lg:flex">
+        <a href="index.html" class="transition hover:text-black">Home</a>
+        <a href="about.html" class="transition hover:text-black">About</a>
+        <a href="service.html" class="transition hover:text-black">Services</a>
+        <div class="group relative">
+          <button class="flex items-center gap-1 transition hover:text-black">Pages <i class="fa fa-chevron-down text-[10px]"></i></button>
+          <div class="invisible absolute left-0 top-full w-56 pt-4 opacity-0 transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="rounded-xl border border-neutral-200 bg-white p-2 shadow-xl">
+              <a href="feature.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Why Choose Us</a>
+              <a href="project.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Our Projects</a>
+              <a href="team.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Our Team</a>
+              <a href="appointment.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Get a Quote</a>
+              <a href="testimonial.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">Customer Feedback</a>
+              <a href="404.html" class="block rounded-lg px-4 py-2 hover:bg-brand-soft hover:text-brand">404 Page</a>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="border-b-2 border-brand pb-1 text-black">Contact</a>
+      </div>
+
+      <a href="appointment.html" class="hidden rounded-full bg-black px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-brand lg:block">Get a quote</a>
+
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="flex h-10 w-10 items-center justify-center rounded-lg border border-neutral-300 text-black lg:hidden">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-neutral-200 bg-white px-6 pb-6 lg:hidden">
+      <div class="flex flex-col py-2 font-medium text-neutral-700">
+        <a href="index.html" class="border-b border-neutral-100 py-3">Home</a>
+        <a href="about.html" class="border-b border-neutral-100 py-3">About</a>
+        <a href="service.html" class="border-b border-neutral-100 py-3">Services</a>
+        <a href="project.html" class="border-b border-neutral-100 py-3">Our Projects</a>
+        <a href="testimonial.html" class="border-b border-neutral-100 py-3">Customer Feedback</a>
+        <a href="contact.html" class="py-3 text-brand">Contact</a>
+      </div>
+      <a href="appointment.html" class="mt-2 block rounded-full bg-brand py-3 text-center font-semibold text-white">Get a quote</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page header -->
+    <section class="blueprint relative overflow-hidden bg-black">
+      <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand/30 blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl px-6 py-20 lg:py-28">
+        <nav aria-label="Breadcrumb" class="rise mb-6 flex items-center gap-2 text-sm text-neutral-400">
+          <a href="index.html" class="hover:text-white">Home</a><span>/</span>
+          <a href="#" class="hover:text-white">Pages</a><span>/</span>
+          <span class="text-brand">Contact us</span>
+        </nav>
+        <h1 class="rise rise-2 font-display text-6xl font-extrabold leading-none tracking-tight text-white sm:text-8xl lg:text-9xl">Contact us</h1>
+        <p class="rise rise-3 mt-6 max-w-xl text-lg text-neutral-300">Tell us about your property and what you want built. We'll help you plan a practical solution.</p>
+      </div>
+      <div class="h-1.5 w-full bg-brand"></div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-20 lg:py-28">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mb-14 max-w-2xl">
+          <p class="mb-3 font-semibold text-brand">Get in touch</p>
+          <h2 class="font-display text-4xl font-extrabold leading-tight tracking-tight text-black sm:text-5xl">Let's discuss your carport, patio roof or steelwork project</h2>
+        </div>
+
+        <div class="grid gap-10 lg:grid-cols-5">
+          <!-- Info -->
+          <div class="flex flex-col gap-5 lg:col-span-2">
+            <div class="flex items-center gap-5 rounded-2xl border border-neutral-200 p-6 transition hover:border-brand">
+              <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-black text-brand"><i class="fa fa-map-marker-alt text-lg"></i></span>
+              <div>
+                <p class="text-sm text-neutral-500">Our location</p>
+                <h3 class="font-display text-xl font-bold text-black">[BUSINESS ADDRESS]</h3>
+              </div>
+            </div>
+            <a href="tel:+27000000000" class="flex items-center gap-5 rounded-2xl border border-neutral-200 p-6 transition hover:border-brand">
+              <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-black text-brand"><i class="fa fa-phone-alt text-lg"></i></span>
+              <div>
+                <p class="text-sm text-neutral-500">Call us now</p>
+                <h3 class="font-display text-xl font-bold text-black">+27 XX XXX XXXX</h3>
+              </div>
+            </a>
+            <a href="mailto:info@yourbusiness.co.za" class="flex items-center gap-5 rounded-2xl border border-neutral-200 p-6 transition hover:border-brand">
+              <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-black text-brand"><i class="fa fa-envelope-open text-lg"></i></span>
+              <div class="min-w-0">
+                <p class="text-sm text-neutral-500">Email us</p>
+                <h3 class="break-words font-display text-xl font-bold text-black">info@yourbusiness.co.za</h3>
+              </div>
+            </a>
+          </div>
+
+          <!-- Form -->
+          <div class="rounded-3xl bg-black p-8 text-neutral-300 sm:p-10 lg:col-span-3">
+            <p class="mb-8 max-w-prose leading-relaxed">Have a project in mind? Contact us to discuss your requirements for a carport, patio roof, palisade fencing, custom shade structure or steelwork installation. We can help you plan a practical solution suited to your property.</p>
+
+            <form class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-medium text-white">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Full name" class="w-full rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-3.5 text-white placeholder-neutral-500 outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/40">
+              </div>
+              <div>
+                <label for="email" class="mb-2 block text-sm font-medium text-white">Your email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-3.5 text-white placeholder-neutral-500 outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/40">
+              </div>
+              <div class="sm:col-span-2">
+                <label for="subject" class="mb-2 block text-sm font-medium text-white">Project type</label>
+                <input type="text" id="subject" name="subject" placeholder="Carport, patio roof, palisade fencing..." class="w-full rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-3.5 text-white placeholder-neutral-500 outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/40">
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="mb-2 block text-sm font-medium text-white">Tell us about your project</label>
+                <textarea id="message" name="message" rows="5" placeholder="Size, location, materials, timing..." class="w-full resize-y rounded-xl border border-neutral-700 bg-neutral-900 px-4 py-3.5 text-white placeholder-neutral-500 outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/40"></textarea>
+              </div>
+              <div class="sm:col-span-2">
+                <button type="submit" class="w-full rounded-full bg-brand py-4 font-semibold text-white transition hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">Request a quote</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="px-6 pb-20 lg:pb-28">
+      <div class="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-neutral-200">
+        <!-- Replace the src below with your own Google Maps embed link -->
+        <iframe title="Our location" class="block h-[450px] w-full grayscale transition hover:grayscale-0" loading="lazy"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-neutral-400">
+    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Contact</h3>
+        <p class="mb-3 flex gap-3"><i class="fa fa-map-marker-alt mt-1 text-brand"></i>[BUSINESS ADDRESS]</p>
+        <p class="mb-3 flex gap-3"><i class="fa fa-phone-alt mt-1 text-brand"></i>+27 XX XXX XXXX</p>
+        <p class="mb-5 flex gap-3"><i class="fa fa-envelope mt-1 text-brand"></i>info@yourbusiness.co.za</p>
+        <div class="flex gap-2">
+          <a href="#" aria-label="Twitter" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-700 transition hover:border-brand hover:bg-brand hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Services</h3>
+        <ul class="space-y-3">
+          <li><a href="service.html" class="transition hover:text-brand">Carports</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Patio Roofs</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Palisade Fencing</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Steelwork Installations</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Custom Shade Structures</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Quick links</h3>
+        <ul class="space-y-3">
+          <li><a href="about.html" class="transition hover:text-brand">About Us</a></li>
+          <li><a href="contact.html" class="transition hover:text-brand">Contact Us</a></li>
+          <li><a href="service.html" class="transition hover:text-brand">Our Services</a></li>
+          <li><a href="#" class="transition hover:text-brand">Terms &amp; Conditions</a></li>
+          <li><a href="#" class="transition hover:text-brand">Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-5 font-display text-lg font-bold text-white">Request a quote</h3>
+        <p class="mb-5">Planning a new carport, patio roof, palisade fence or steelwork project? Get in touch with us to discuss your requirements.</p>
+        <form class="flex rounded-full border border-neutral-700 p-1.5 focus-within:border-brand" onsubmit="return false">
+          <label for="footerEmail" class="sr-only">Your email</label>
+          <input id="footerEmail" type="email" placeholder="Your email" class="w-full bg-transparent px-4 text-white placeholder-neutral-500 outline-none">
+          <button class="rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white transition hover:bg-brand-dark">Contact</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-sm sm:flex-row">
+        <p>&copy; <a href="#" class="text-white hover:text-brand">SteelShade Solutions</a>. All rights reserved.</p>
+        <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+        <p>Designed by <a href="https://htmlcodex.com" class="text-white hover:text-brand">HTML Codex</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#" id="toTop" aria-label="Back to top" class="invisible fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-brand text-white opacity-0 shadow-lg transition hover:bg-black">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', open);
+    });
+
+    const toTop = document.getElementById('toTop');
+    addEventListener('scroll', () => {
+      const show = scrollY > 400;
+      toTop.classList.toggle('invisible', !show);
+      toTop.classList.toggle('opacity-0', !show);
+    });
+  </script>
+</body>
+</html>
